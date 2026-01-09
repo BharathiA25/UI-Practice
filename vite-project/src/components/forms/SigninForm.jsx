@@ -6,6 +6,7 @@ import { useFormik } from "formik";
 import GoogleImage from '../../assets/Googlee.png'
 import FacebookImage from '../../assets/Facebook.png'
 import SigninComponents from '../common/SigninComponents';
+import { useNavigate } from 'react-router-dom';
 function SigninForm() {
      const formik = useFormik({
         initialValues: {
@@ -16,6 +17,7 @@ function SigninForm() {
             console.log("SignIn Data:", values);
         },
     });
+    const navigate = useNavigate();
   return (
       <Box
             component="form"
@@ -43,7 +45,11 @@ function SigninForm() {
                 value={formik.values.password}
                 onChange={formik.handleChange}
             />
-            <Typography sx={{mt:2,textAlign:'right',cursor:'pointer',color:'primary.main'}}>Forgot password</Typography>
+            <Typography 
+            onClick ={
+                ()=> navigate('/forgot-password')
+            } 
+            sx={{mt:2,textAlign:'right',cursor:'pointer',color:'primary.main'}}>Forgot password</Typography>
             </Box>
             {/* Submit */}
             <AppButton

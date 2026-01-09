@@ -6,6 +6,7 @@ function AppButton({ children, ...props }) {
       variant="contained"
       sx={{
         height: 46,
+        width:330,
         backgroundColor: "primary.main",
         "&:hover": {
           backgroundColor: "primary.dark",

@@ -1,6 +1,8 @@
 import React from 'react'
 import { Box, Typography } from '@mui/material'
+import { useNavigate } from 'react-router-dom'
 function AuthRedirect({ authMessage, authType }) {
+    const navigate = useNavigate();
     return (
         <Box sx={{
         mt: 2,
@@ -16,6 +18,7 @@ function AuthRedirect({ authMessage, authType }) {
             {authMessage}{" "}
             <Box
                 component="span"
+                onClick={()=> authType === "Sign up" ? navigate('/') : navigate('/login') }
                 sx={{
                     color: "primary.main",
                     cursor: "pointer",

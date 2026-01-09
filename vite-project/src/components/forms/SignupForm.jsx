@@ -3,8 +3,10 @@ import AppButton from '../common/AppButton'
 import InputField from '../common/InputField'
 import { Box, Typography } from '@mui/material'
 import { useFormik } from "formik";
+import {useNavigate} from 'react-router-dom'
 
 function SignupForm() {
+    const navigate = useNavigate();
     const formik = useFormik({
         initialValues: {
             name: "",
@@ -13,6 +15,7 @@ function SignupForm() {
         },
         onSubmit: (values) => {
             console.log("Signup Data:", values);
+            navigate('/login')
         },
     });
     return (
@@ -66,7 +69,6 @@ function SignupForm() {
             {/* Submit */}
             <AppButton
                 type="submit"
-                variant="contained"
                 fullWidth
                 disabled={formik.isSubmitting}
             >

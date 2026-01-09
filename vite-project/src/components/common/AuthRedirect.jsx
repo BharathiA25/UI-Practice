@@ -2,18 +2,16 @@ import React from 'react'
 import { Box, Typography } from '@mui/material'
 function AuthRedirect({ authMessage, authType }) {
     return (
-        <Typography
-            sx={{
-                width: "228px",
-                height: "30px",
-                lineHeight: "100%",
-                color: "text.secondary",
-                mt: 2,
-                textAlign: "center",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "flex-start",
-            }}
+        <Box sx={{
+        mt: 2,
+        width: "100%",
+        display: "flex",
+        justifyContent: authType === "Sign up" ? "center" : "flex-start",
+      }}>
+        <Typography sx={{
+          lineHeight: "100%",
+          color: "text.secondary",
+        }}
         >
             {authMessage}{" "}
             <Box
@@ -27,6 +25,7 @@ function AuthRedirect({ authMessage, authType }) {
                 {authType}
             </Box>
         </Typography>
+        </Box>
     )
 }
 

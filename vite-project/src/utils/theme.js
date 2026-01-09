@@ -14,10 +14,9 @@ const theme = createTheme({
       default: "#F5F7FA",
       paper: "#FFFFFF",
       input: "#F4F5F9",
+      hover : "#F9F9F9"
     },
-    border: {
-      default: "#DBDCDE",
-    },
+    divider: "#DBDCDE",
   },
 
   shape: {
@@ -37,7 +36,8 @@ const theme = createTheme({
     },
     button: {
       textTransform: "none",
-      fontWeight: 600,
+      fontWeight: 500,
+      width : 330,
     },
   },
 });

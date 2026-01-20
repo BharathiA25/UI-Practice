@@ -9,12 +9,14 @@ const theme = createTheme({
     text: {
       primary: "#1A1A1A",
       secondary: "#89868D",
+      default : '#ffff'
     },
     background: {
       default: "#F5F7FA",
       paper: "#FFFFFF",
       input: "#F4F5F9",
-      hover : "#F9F9F9"
+      hover : "#F9F9F9",
+      sidebar :"#DECCFE",
     },
     divider: "#DBDCDE",
   },

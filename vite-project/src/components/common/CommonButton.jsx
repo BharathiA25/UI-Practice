@@ -5,7 +5,12 @@ function CommonButton({Buttoncolor, ButtonName, Textcolor}) {
   return (
     <Button
       variant={isOutlined ? 'outlined' : 'contained'}
-      sx={{height : '32px', width : 'auto', backgroundColor : isOutlined ? 'transparent':{Buttoncolor}, color : {Textcolor}}}>
+      sx={{
+        height : '32px',
+        width:'auto',
+        backgroundColor : isOutlined ? "transparent" : Buttoncolor,
+        color : Textcolor 
+      }}>
     {ButtonName}
     </Button>
   )

@@ -2,8 +2,7 @@ import React from 'react'
 import { Box } from '@mui/material'
 import SidebarContent from '../components/common/SidebarContent'
 import ToolBar from '../components/common/ToolBar'
-import { Outlet } from 'react-router-dom'
-import NewProjectPage from './NewProjectPage'
+import SettingPage from './SettingPage'
 function MainPage() {
   return (
     <Box
@@ -36,7 +35,7 @@ function MainPage() {
           overflowY: "auto",
         }}
       >
-        <NewProjectPage/>
+      <SettingPage/>      
       </Box>
 
     </Box>

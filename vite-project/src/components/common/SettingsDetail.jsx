@@ -1,20 +1,17 @@
 import { Box, Typography } from '@mui/material'
-import React from 'react'
 import CommonButton from './CommonButton'
 
 function SettingsDetail() {
   return (
-    <Box>
-        <Box>
+    <Box sx={{display : 'flex', alignItems : 'center', justifyContent : 'space-between'}}>
+        <Box >
             <Typography variant='h4'>Setting Details</Typography>
-        </Box>
-        <Box sx={{display : 'flex', justifyContent : 'space-between'}}>
-            <Typography sx={{color : 'text.secondary'}}>Update your photo and personal details here.</Typography>
-            <Box>
-                <CommonButton ButtonName={"Cancel"} Buttoncolor={"text.secondary"} Textcolor={"text.primary"}/>
-                <CommonButton ButtonName={"Save"} Buttoncolor={"text.defaul"} Textcolor={"primary.main"}/>
+            <Typography sx={{color : 'text.secondary', mt:2}}>Update your photo and personal details here.</Typography>
+         </Box>   
+            <Box sx={{display : 'flex', gap:2, p:3}}>
+                <CommonButton ButtonName={"Cancel"} Buttoncolor={"text.default"} Textcolor={"text.primary"} />
+                <CommonButton ButtonName={"Save"} Buttoncolor={"primary.main"} Textcolor={"text.default"}/>
             </Box>
-        </Box>
     </Box>
   )
 }

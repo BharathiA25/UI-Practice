@@ -2,7 +2,8 @@ import React from 'react'
 import { Box } from '@mui/material'
 import SidebarContent from '../components/common/SidebarContent'
 import ToolBar from '../components/common/ToolBar'
-import SettingPage from './SettingPage'
+import PricingPage from './PricingPage'
+PricingPage
 function MainPage() {
   return (
     <Box
@@ -35,7 +36,7 @@ function MainPage() {
           overflowY: "auto",
         }}
       >
-      <SettingPage/>      
+      <PricingPage/>     
       </Box>
 
     </Box>

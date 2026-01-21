@@ -19,6 +19,7 @@ const theme = createTheme({
       sidebar :"#DECCFE",
     },
     divider: "#DBDCDE",
+    status : '#2DCCFF',
   },
 
   shape: {

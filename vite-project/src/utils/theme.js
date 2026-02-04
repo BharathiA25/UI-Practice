@@ -5,6 +5,7 @@ const theme = createTheme({
     primary: {
       main: "#6E39CB",
       dark: "#5A2FB0",
+      shade:'#A877FD',
     },
     text: {
       primary: "#1A1A1A",
@@ -20,6 +21,8 @@ const theme = createTheme({
     },
     divider: "#DBDCDE",
     status : '#2DCCFF',
+    danger : '#F93131',
+    darkblue : '#533FE4' 
   },
 
   shape: {

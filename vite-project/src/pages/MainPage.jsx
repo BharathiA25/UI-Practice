@@ -2,7 +2,7 @@ import React from 'react'
 import { Box } from '@mui/material'
 import SidebarContent from '../components/common/SidebarContent'
 import ToolBar from '../components/common/ToolBar'
-import EditProductPage from './EditProductPage'
+import OrderListPage from './OrderListPage'
 function MainPage() {
   return (
     <Box
@@ -35,7 +35,7 @@ function MainPage() {
           overflowY: "auto",
         }}
       >
-        <EditProductPage/>
+        <OrderListPage/>
       </Box>
 
     </Box>

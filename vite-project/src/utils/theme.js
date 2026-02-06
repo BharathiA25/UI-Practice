@@ -22,7 +22,8 @@ const theme = createTheme({
     divider: "#DBDCDE",
     status : '#2DCCFF',
     danger : '#F93131',
-    darkblue : '#533FE4' 
+    darkblue : '#533FE4' ,
+    dark : '#3A3541',
   },
 
   shape: {

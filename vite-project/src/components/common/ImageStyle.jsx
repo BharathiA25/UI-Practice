@@ -76,6 +76,51 @@ function ImageStyle({count}) {
   />
 </Box>
 }
+    {count === 5 &&
+      <Box sx={{ position: 'relative', height: 25 }}>
+        <Box component="img" src={pic5}
+    sx={{
+      position: 'absolute',
+      height: '20px',
+      left: 0,
+      top: 0,
+    }}
+  />
+  <Box component="img" src={pic6}
+    sx={{
+      position: 'absolute',
+      height: '20px',
+      left: 15,
+      top: 0,
+    }}
+  />
+  <Box component="img" src={pic7}
+    sx={{
+      position: 'absolute',
+      height: '20px',
+      left: 30,
+      top: 0,
+    }}
+  />
+  <Box component="img" src={pic8}
+    sx={{
+      position: 'absolute',
+      height: '20px',
+      left: 45,
+      top: 0,
+    }}
+  />
+  <Box component="img" src={pic10}
+    sx={{
+      position: 'absolute',
+      height: '20px',
+      left: 60,
+      top: 0,
+    }}
+  />
+</Box>
+}
+
 {count === 6 &&
       <Box sx={{ position: 'relative', height: 25 }}>
         <Box component="img" src={pic5}

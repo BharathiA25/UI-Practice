@@ -26,7 +26,12 @@ const theme = createTheme({
     dark : '#3A3541',
     litegreen : '#E7FFF4',
     litered : '#F6D1DA',
-    textgreen :'#3EB900'
+    textgreen :'#3EB900',
+    litesandal : '#FFDAE3',
+    liteblueshade : '#E2F9FF',
+    literose : '#FFE7EE',
+    indeed:'#3467C2',
+    paleorange : '#FFDCA6',
   },
 
   shape: {

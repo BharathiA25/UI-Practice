@@ -24,6 +24,9 @@ const theme = createTheme({
     danger : '#F93131',
     darkblue : '#533FE4' ,
     dark : '#3A3541',
+    litegreen : '#E7FFF4',
+    litered : '#F6D1DA',
+    textgreen :'#3EB900'
   },
 
   shape: {
